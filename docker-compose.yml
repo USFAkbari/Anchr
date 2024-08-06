@@ -22,7 +22,7 @@ services:
     build:
       context: .
     ports:
-      - "8080:${PORT}"
+      - "${PORT}:${PORT}"
     volumes:
       - anchr_data:/app/data
     env_file: .env

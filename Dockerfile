@@ -12,7 +12,7 @@ COPY *.json /app/
 VOLUME [ "/app/data" ]
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh openssl
+    apk add --no-cache bash git openssh
 RUN npm install -g bower
 RUN npm install && \
     cd public && \
